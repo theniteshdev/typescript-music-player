@@ -39,9 +39,9 @@ nav ul li.logo img {
 }
 
 main {
-    height: 80vh;
-    width: 80%;
-    margin-top: 34px;
+    height: calc(100vh - 140px);
+    width: 100%;
+    /* margin-top: 15px; */
     margin-inline: auto;
     background-image: url('./images/bg.jpg');
     background-size: cover;
@@ -50,4 +50,60 @@ main {
     /* background-attachment: fixed; */
     border-radius: 8px;
     /* overflow: hidden; */
+}
+
+.musicPlayer {
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.musicController {
+    width: 70%;
+    accent-color: #1ED760;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+    gap: 8px;
+}
+
+.icon {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    border-radius: 6px;
+    /* overflow: hidden; */
+    padding: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #1ED760;
+}
+
+.icon#playButton {
+    background-image: url('./images/svg-icons/play-solid-full.svg');
+}
+
+.icon#reverseButton {
+    background-image: url('./images/svg-icons/backward-solid-full.svg');
+}
+
+.icon#nextButton {
+    background-image: url('./images/svg-icons/forward-solid-full.svg');
 }
