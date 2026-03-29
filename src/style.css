@@ -1,0 +1,39 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 70px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 300ms ease-in-out;
+}
+
+nav ul li:hover {
+    color: #1ED760;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li.logo img {
+    width: 34px;
+}
