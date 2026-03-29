@@ -37,3 +37,17 @@ nav ul {
 nav ul li.logo img {
     width: 34px;
 }
+
+main {
+    height: 80vh;
+    width: 80%;
+    margin-top: 34px;
+    margin-inline: auto;
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    border-radius: 8px;
+    /* overflow: hidden; */
+}
